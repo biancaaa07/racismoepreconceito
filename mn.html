@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> Trabalho ad </title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+
+		
+			
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+<h1>Movimento negro</h1>
+</center>
+</div>
+</div>
+
+<br>
+<h3>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade"> 
+                                                       O movimento negro é um conjunto de ações, organizações e atividades empreendidas por
+                                                       pessoas negras e seus aliados para combater o racismo, a discriminação racial e 
+                                                       promover a igualdade racial. Esse movimento tem raízes históricas profundas e está 
+                                                       presente em diversos países ao redor do mundo, com particular relevância nos 
+                                                       Estados Unidos, Brasil e outros países com uma 
+                                                       significativa população negra.
+<br>
+                                                       O movimento negro busca enfrentar as várias formas de opressão e desigualdade que afetam
+                                                       as pessoas negras, incluindo o racismo institucional, o preconceito racial, a brutalidade 
+                                                       policial, a falta de oportunidades econômicas, a sub-representação política e cultural, 
+                                                       entre outros problemas. Os ativistas do movimento negro trabalham para conscientizar
+                                                       a sociedade sobre essas questões, promover 
+                                                       a mudança de políticas e estruturas que perpetuam a desigualdade racial e afirmar a
+                                                       importância e o valor das vidas negras.
+<br>
+                                                       O movimento negro tem sido marcado por uma variedade de estratégias e abordagens ao
+                                                       longo do tempo. Isso inclui protestos pacíficos,como marchas, manifestações e passeatas,
+                                                       bem como formas de resistência mais diretas, como boicotes e atos de desobediência civil. 
+                                                       Além disso, o movimento negro também utiliza a mídia, a arte, a literatura, a academia e as 
+                                                       redes sociais para espalhar sua mensagem, 
+                                                       compartilhar histórias e experiências e ampliar a conscientização sobre as questões raciais.
+ <br>
+                                                       Um aspecto importante do movimento negro é a busca pela representatividade e voz para a 
+                                                       comunidade negra, tanto na política quanto namídia e em outras esferas de poder. 
+                                                       Isso envolve a luta por direitos civis, pela inclusão de perspectivas negras nas narrativas 
+                                                       históricas e culturais, e pela criação de espaços seguros e empoderadores para a comunidade 
+                                                       negra se expressar e se organizar.
+ <br>
+                                                       É importante ressaltar que o movimento negro não é homogêneo. Existem diferentes organizações, 
+                                                       líderes e abordagens dentro do movimento, e os ativistas têm perspectivas e objetivos diversos. 
+                                                       No entanto, todos compartilham o compromisso com a igualdade racial e a justiça social, 
+                                                       buscando criar uma sociedade mais equitativa e inclusiva para todas as pessoas, 
+                                                       independentemente de sua raça ou etnia.
+</div>
+ </pre>
+</p>
+</h3>
+
+</body>
+		</html>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

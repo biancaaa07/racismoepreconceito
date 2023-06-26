@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> O que é o classismo ?</title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+		
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+<h1>O que é o classismo ?</h1>
+</center>
+</div>
+</div>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+
+                                                                                  O classismo ou o preconceito social é uma forma de preconceito,
+                                                                                  discriminação ou estereotipagem baseada na classe social de uma pessoa. 
+                                                                                  Ele envolve a ideia de que certas classes sociais são superiores ou 
+                                                                                  inferiores a outras e pode levar àdesigualdade de oportunidades,
+                                                                                  tratamento injustoe marginalização de indivíduos pertencentes a
+                                                                                  determinadas classes sociais.
+<br>
+                                                                                  O classismo pode manifestar-se de várias maneiras, incluindo:
+<br>
+                                                                                  1. Estereótipos e generalizações negativas: quandocertas
+                                                                                  características ou comportamentos são atribuídos a pessoas de
+                                                                                  determinada classe social, sem levar em conta a individualidade
+                                                                                  ou diversidade dentro desse grupo.
+<br>
+                                                                                  2. Discriminação no acesso a oportunidades: quando pessoas de 
+                                                                                  determinadas classes sociais são excluídas ou enfrentam barreiras
+                                                                                  no acesso a empregos, educação, moradia,serviços de saúde e
+                                                                                  outros recursos importantes.
+<br>
+                                                                                  3. Tratamento diferenciado: quando pessoas de diferentes classes
+                                                                                  sociais são tratadas de forma desigual em interações sociais, 
+                                                                                  serviços ou instituições, com base na percepção de sua classe social.
+<br>
+                                                                                  4. Privilegiamento de determinadas classes: quando certas
+                                                                                  classes sociais recebem privilégios e vantagens em comparação com
+                                                                                  outras, resultando em desigualdades sistemáticas.
+ <br>
+
+                                                                                  O classismo é um fenômeno complexo e multifacetado,que pode afetar
+                                                                                  a vida das pessoas de várias maneiras.
+                                                                                  Combater o classismo envolve a promoção da igualdade de oportunidades,
+                                                                                  a conscientização sobre as desigualdades sociais e a luta por uma
+                                                                                  sociedade mais justa e inclusiva,independentemente da classe social 
+                                                                                  das pessoas.
+</h3>
+</div>
+</pre>
+</p>
+</body>
+</html>
+ 
+
+
+
+
+
+

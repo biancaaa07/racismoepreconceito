@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> Trabalho ad </title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+    </div>
+
+		
+		
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="acessibilidade">
+<div class="texto">
+<center>
+<h1>Representatividade</h1>
+</center>
+</div>
+</div>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                              A representatividade negra é de extrema importância em diversos aspectos da
+                                                              sociedade.Ela se refere à inclusão e visibilidade de pessoas negras em todas as esferas,
+                                                              como mídia, política,cultura,educação, mercado de trabalho e outros espaços de poder e 
+                                                              influência. Existem várias razões pelas quais a representatividade negra é fundamental:<br> <br>
+
+                                                              Combate ao racismo: A representatividade negra desafia os estereótipos e preconceitos 
+                                                              raciais enraizados na sociedade. Ao ver pessoas negras ocupando posições de destaque
+                                                              e sucesso, é possível romper com as narrativas negativas e estereótipos prejudiciais 
+                                                              que historicamente foram às pessoas negras associadas.
+<br> <br>
+                                                              Empoderamento: A representatividade negra desempenha um papel fundamental no 
+                                                              empoderamento das pessoas negras, permitindo que elas se vejam como protagonistas 
+                                                              e modelos de sucesso em diferentes áreas. Isso ajuda a quebrar estereótipos 
+                                                              negativos e promover uma autoimagem positiva, fortalecendo
+                                                              a autoestima e a confiança.
+ </div>
+ </pre>
+</p>
+</h3>
+
+
+<h3 class= "ref">
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                                                                               Mas aonde estão essas referências ?
+ </div>
+ </pre>
+</p>
+</h3>
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade"> 
+                                                             a baixo separamos alguns representantes brasileiros do movimento negro:                            </p>
+</div>
+</pre>
+</h3>
+
+<div class="container"> <pre class="code"> <div class="texto"> <h2 class= "djo">Gustavo Pereira Marques</h2> </div> </pre> </div>
+<div class="dj"> <center> <img src="djonga.jpg" style="position:relative; top:1%; left:20px;"width="300" height="300"/> </center> </div>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                            cujo nome artístico é Djonga, é um rapper brasileiro nascido
+                                                            em Belo Horizonte, Minas Gerais. Ele se destacou no cenário da música brasileira 
+                                                            contemporânea por suas letras impactantes e sua habilidade em abordar questões sociais
+                                                            e políticas em suas músicas.
+ 
+
+                                                            Djonga começou a sua carreira musical em 2009, mas ganhou maior reconhecimento a partir de 
+                                                            2014, quando lançou o álbum "Herança" em parceria com o coletivo DV Tribo. Seu estilo
+                                                            lírico é conhecido por tratar de temas como racismo, desigualdade social, 
+                                                            violência e empoderamento negro. <br>
+
+                                                            em uma de suas músicas está o seu bordão "Fogo nos racistas", 
+                                                            que já se tornou um marco do artista.
+<div>
+</pre>
+<center>
+<video controls poster="dj.jpg">
+  <source src="dj.mp4" type="video/mp4">
+  <source src="dj.webm" type="video/webm">
+  <source src="dj.ogv" type="video/ogg">
+  <object>
+    <embed src="dj.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+</center>
+
+<div class="texto">
+<h3>
+<div class="at"
+<div class="container">
+<pre class="code">
+<p class="acessibilidade" > 
+                                          (áudio transcrição) <br>
+                        "Vocês pregam paz e falam fogo nos racistas
+			  vocês acham certo ?"
+                         (música de fundo: sensação sensacional)
+                          sim <br>
+                         (som de riso)
+                         (música de fundo: firma, firma,firma)
+                         fogo nos racistas, <br>
+                         (música)
+                         sensacional
+                         sensação sensacional 
+</p>
+</div>
+ </div>
+ </pre>
+</h3>
+<br>
+</div>
+
+</h3>
+</div>
+ <br>
+ 
+<br><br><br>
+ <div class="container">
+<pre class="code">
+  <div class="texto">
+<br>
+<center>
+<h2 class= "sf"> Taís Araújo </h2>
+</center>
+</div>
+ </div>
+ </pre>
+ <br><br><br>
+ <center>
+ <div class="dj">
+<img src="tais.jpg" width="300" height="300"/>
+</div>
+</center>
+<br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<div class="texto">
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade" >
+
+
+
+
+
+
+
+                                                                           Taís Araújo é uma renomada atriz brasileira. Ela nasceu 
+                                                                           em 25 de novembro de 1978, em Rio de Janeiro, Brasil. Taís ganhou destaque na
+                                                                           televisão brasileira por seus trabalhos em novelas, séries e filmes.<br>
+
+                                                                           Ela iniciou sua carreira na década de 1990, participando de 
+                                                                           programas de televisão e séries. Seu primeiro papel de destaque foi na novela "Xica da Silva"
+                                                                          (1996), interpretando a personagem principal. Desde então, ela atuou em várias 
+                                                                           produções de sucesso, consolidando-se como uma das atrizes mais talentosas e 
+                                                                           populares do Brasil. 
+<br>
+                                                                           Além de seu trabalho como atriz, Taís Araújo é uma defensora da representatividade negra 
+                                                                           e dos direitos das mulheres. Ela tem sido uma voz importante na luta contra o racismo e 
+                                                                           o sexismo, e tem usado sua plataforma para promover a igualdade e o empoderamento 
+                                                                           feminino. </p>
+ </div>
+ </pre>
+</h3>
+<br>
+</div>
+ <center>
+ <video controls poster="ta.jpg">
+  <source src="ta.mp4" type="video/mp4">
+  <source src="ta.webm" type="video/webm">
+  <source src="ta.ogv" type="video/ogg">
+  <object>
+    <embed src="ta.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+
+ <div class="container">
+<pre class="code">
+  <div class="texto">
+<br>
+<center>
+<h2 class="ta">             Transcrição de áudio</center> </h2>
+</pre>
+</div>
+ </div>
+<div class="texto">
+<h3>
+<div class="taa">
+<div class="container">
+<pre class="code">
+<p class="acessibilidade" >
+Teoricamente ele está livre, certo ? Errado!
+            Errado porque o meu filho ele é um menino negro
+                    e liberdade nao é um direito que ele vai poder usufruir
+                se ele andar pelas ruas descalço, sem camisa, sujo 
+             saindo da aula de futebol, ele corre o risco de ser 
+               apontado como um infrator, mesmo com 6 anos de 
+               idade quando ele se tornar adolescente ele não vai 
+       ter a liberdade de ir pra sua escola pegar uma 
+                     condução pegar um ônibus,com a sua mochila, com o 
+           seu boné, ou com o seu capuz, com o seu andar 
+      adolescente, sem correr o risco de levar uma 
+       investida violenta da polícia ao ser confudido 
+                    com um bandido porque no brasil a cor do meu filho, 
+                       é a cor que faz com que as pessoas mudem de calçada,
+               escondam suas bolsas e que blindem seus carros. 
+</p>
+</pre>
+</div>
+</div>
+</h3>
+</div>
+</center>
+</p>
+
+<br><br><br> <br> <br><br><br><br> <br> <br><br><br><br> <br> <br><br><br><br> <br> <br><br><br>
+ <div class="container">
+<pre class="code">
+  <div class="texto">
+<br>
+<center>
+<h2 class= "mb"> Mano Brown </h2>
+</center>
+</div>
+ </div>
+ </pre>
+ 
+  <div class="mbr">
+<img src="mb.png" width="350" height="300"/>
+</div>
+<br><br><br>
+ 
+ <div class="texto">
+<h3>
+<div class="mbbb">
+<div class="container">
+<pre class="code">
+<p class="acessibilidade" >
+                                                       Mano Brown, cujo nome real é Pedro Paulo Soares Pereira, é um rapper
+                                                       e compositor brasileiro. Ele nasceu em 22 de abril de 1970 em São Paulo, Brasil.
+                                                       Brown é um dos membros fundadores e líder do grupo de rap brasileiro chamado 
+                                                       Racionais MC's.<br>
+
+                                                       O Racionais MC's foi formado em 1988 e é conhecido por suas letras que abordam
+                                                       questões sociais, raciais e políticas, retratando a realidade da periferia e a
+                                                       luta contra a desigualdade racial. O grupo ganhou destaque no cenário musical brasileiro
+                                                       e é considerado uma referência no rap nacional.<br>
+
+                                                       Mano Brown é reconhecido por sua habilidade lírica, sua presença de palco e 
+                                                       seu engajamento com questões sociais. Suas letras são marcadas pela crítica 
+                                                       social e política, além de retratarem experiências pessoais e desafios enfrentados
+                                                       pela comunidade negra no Brasil. <br>
+
+                                                      Além de sua carreira com o Racionais MC's, Mano Brown também lançou álbuns solo,
+                                                      como "Boogie Naipe" (2016), explorando outros estilos musicais além do rap. 
+                                                      Sua influência e contribuição para a música brasileira são amplamente reconhecidas,
+                                                      e ele é considerado uma figura importante no cenário do rap no Brasil.
+
+</p>
+</pre>
+</div>
+</div>
+</h3>
+</div>
+</center>
+</p> 
+<center>
+<video controls poster="mb.jpg" width="500" height="500">
+  <source src="mb.mp4" type="video/mp4">
+  <source src="mb.webm" type="video/webm">
+  <source src="mb.ogv" type="video/ogg">
+  <object>
+    <embed src="mb.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+ </center>
+ 
+</body>
+		</html>
+		

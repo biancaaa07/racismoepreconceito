@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> O que é o racismo ?</title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+	    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+
+		
+		
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+<h1>O que é o racismo ?</h1>
+</center>
+</div>
+</div>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                              Racismo é uma forma de discriminação e preconceito baseada na raça ou etnia
+                                                              de uma pessoa. É a crença de que algumas raças são superiores a outras, resultando em tratamento injusto,
+                                                              desigualdade de oportunidades e privilégios para certos grupos raciais em detrimento de outros.
+<br>
+                                                              O racismo pode se manifestar de várias maneiras, desde atitudes e comentários ofensivos até ações 
+                                                              discriminatórias e estruturas institucionais que perpetuam a desigualdade racial. Pode ocorrer 
+                                                              tanto em níveis individuais, quando uma pessoa expressa suas crenças racistas ou discrimina outra 
+                                                              pessoa com base na raça, quanto em níveis sistêmicos, quando políticas, leis e práticas sociais 
+                                                              perpetuam a marginalização e a opressão de certos grupos raciais.
+ <br>
+                                                              É importante destacar que o racismo não tem base científica. A ideia de raças superiores ou inferiores
+                                                              foi refutada pela comunidade científica há muito tempo. A raça é uma construção social, e as diferenças entre
+                                                              as pessoas são superficiais e não justificam tratamento desigual.
+<br>
+                                                              Combater o racismo envolve o reconhecimento da dignidade e igualdade de todas as pessoas, independentemente
+                                                              da sua raça ou etnia, e a promoção de políticas e práticas que garantam a igualdade de oportunidades para 
+                                                              todos. Isso inclui o combate a estereótipos raciais, a promoção da diversidade e inclusão em todos os setores 
+                                                              da sociedade e a educação sobre a história e impactos do racismo para criar uma sociedade mais justa e equitativa.
+
+</h3>
+</center>
+</p>
+</div>
+</pre>
+<center>
+<div class="acessibilidade">
+<div class="css">
+<img src="inicio.jpg" width="500" height="300"/>
+</div>
+</div>
+</div>
+</center>
+
+
+
+
+
+
+
+
+
+</body>
+		</html>
+		

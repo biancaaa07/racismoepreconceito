@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> Referências artísticas </title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+		    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+
+		
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+
+<h1>Referências artísticas</h1>
+<br>
+</div>
+</center>
+</div>
+<br>
+<h3>
+
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                        A representatividade social é extremamente importante em uma sociedade diversa e inclusiva. 
+                                                        Ela se refere à presença e participação de indivíduos e grupos que refletem a diversidade 
+                                                        da população em diferentes setores e esferas da sociedade, como política, mídia, negócios, 
+                                                        educação, entre outros.
+<br>
+                                                        Aqui estão algumas razões pelas quais a representatividade social é significativa:
+<br>
+                                                        1. Inclusão e igualdade: A representatividade social permite que pessoas de diferentes origens, 
+                                                        identidades, raças, gêneros, orientações sexuais, religiões e habilidades sejam vistas, 
+                                                        ouvidas e levadas em consideração. Ela combate a marginalização e a exclusão, 
+                                                        promovendo uma sociedade mais igualitária e justa.
+<br>
+                                                        2. Empoderamento: Quando as pessoas se veem representadas em posições de poder, influência 
+                                                        e liderança, isso fortalece sua autoestima, autoconfiança e senso de pertencimento. A representatividade 
+                                                        social inspira e encoraja outros indivíduos a acreditarem em suas próprias capacidades e a se 
+                                                        envolverem ativamente em diferentes áreas.
+<br>
+                                                        3. Ampliação de perspectivas: A presença de diversas vozes e experiências enriquece o diálogo social, 
+                                                        promove o intercâmbio de ideias e leva a uma compreensão mais abrangente dos desafios e necessidades
+                                                        enfrentados por diferentes grupos. A representatividade social ajuda a evitar estereótipos e preconceitos,
+                                                        permitindo uma visão mais ampla e precisa da realidade.
+<br>
+                                                        4. Tomada de decisão mais informada: Quando a diversidade de perspectivas é considerada na tomada de 
+                                                        decisões, as soluções propostas tendem a ser mais abrangentes, relevantes e eficazes. A 
+                                                        representatividade social contribui para a formulação de políticas, leis, práticas empresariais 
+                                                        e estruturas sociais que reflitam as necessidades e interesses de toda a população, não 
+                                                        apenas de uma parcela privilegiada.
+<br>
+                                                        5. Estímulo à mudança social: A presença de representantes de grupos marginalizados desafia as 
+                                                        estruturas de poder existentes e estimula a transformação social. A representatividade social impulsiona
+                                                        discussões, mobilizações e movimentos que buscam romper com as desigualdades e promover a 
+                                                        inclusão em todas as esferas da sociedade.
+<br>
+                                                        Em resumo, a representatividade social desempenha um papel essencial na construção de uma 
+                                                        sociedade mais justa, inclusiva e progressista, onde todas as pessoas tenham oportunidades iguais
+                                                        de participação, influência e sucesso. É um princípio fundamental para a promoção da diversidade, 
+                                                        igualdade e respeito pelos direitos de cada indivíduo.
+</pre>
+</p>
+</h3>
+</center>
+</p>
+</div>
+
+<h3 class= "ref">
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                                                                           Mas aonde estão essas referências ?
+ </div>
+ </pre>
+</p>
+</h3>
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade"> 
+                                                         a baixo separamos alguns representantes brasileiros do movimento social: </p>
+</div>
+</pre>
+</h3>
+
+<div class="container"> <pre class="code"> <div class="texto"> <h2 class= "sdd">Lucas Luan</h2> </div> </pre> </div>
+<div class="sd"> <center> <img src="sid.jpg" style="position:relative; top:1%; left:20px;"width="300" height="300"/> </center> </div>
+
+<h3>
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                        cujo nome artístico é MC Sid, é um rapper brasileiro de 26 anos
+                                                        nascido na capital de Brasília. Ele se destacou no cenário das batalhas de Rap 
+                                                        que se glorificou após ganhar o duelo de MCs em 2016
+ <br>
+                                                        Porém o Rapper não parou por aí e começou a lançar músicas sobre sua vida
+                                                        pessoal e também críticasao governo e ao classismo existente no país, e em uma 
+                                                        de suas obras mais conhecidas está "Brasil de quem ?" que fala sobre a política nacional,
+                                                        bem no ápice da greve dos caminhoneiros, no ano passado. Sua participação no 
+                                                        canal do Youtube Rap Box também ganhou bastante visibilidade com a música de protesto Rap News.
+ <br>
+                                                        A música que virou uma espécie de hino involuntário para o movimento grevista foi inspirada no 
+                                                        noticiário de jornais, TVs e mídia social.
+                                                        “Não sou nem de direita nem de esquerda. Acho isso injusto
+                                                        mudar a cabeça de alguém. Quero só acabar com preconceitos das pessoas”, diz ao UOL Sid, que 
+                                                        defende manifestações com foco e pautas concretas, bem diferente das ocorridas em 2013. 
+<br>
+</div>
+</pre>
+</p>
+<center>
+<video controls poster="mcsid.jpeg" width="640" height="450">
+  <source src="sid.mp4" type="video/mp4">
+  <source src="sid.webm" type="video/webm">
+  <source src="sid.ogv" type="video/ogg">
+  <object>
+    <embed src="sid.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+</center>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+
+<br>
+<h2>César Resende</h2>
+<div class="cc"> <center> <img src="cm.jpg" style="position:relative; top:1%; left:20px;"width="300" height="300"/> </center> </div>
+
+</div>
+</center>
+</div>
+
+<br>
+<h3>
+
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+                                                         Resende Lemos, também conhecido como MC Resende, é um rapper nascido no Morro do Quadro,
+                                                        em Vitória/ES. Ele é filho de um funcionário público e de uma professora de Português.
+                                                        Durante sua adolescência, Resende foi influenciado por artistas como Racionais MCs,
+                                                        Emicida, Charlie Brown Jr., Legião Urbana, além das influências musicais de seus pais,
+                                                        como Milton Nascimento e a banda capixaba Moxuara. Apesar de ser considerado uma pessoa
+                                                        tímida e tranquila, ele absorvia tudo ao seu redor, permanecendo em seu próprio mundo.
+                                                        Em uma entrevista ao G1, ele mencionou: "Sempre fui tímido e calado. Absorvia muitas
+                                                        coisas ao meu redor, mas ficava no meu mundo. As pessoas até achavam que eu era louco.
+                                                        Na escola, eu me mantinha mais reservado. Em casa, escrevia na parede do quarto".
+<br>
+                                                        Inicialmente, Resende foi aprovado no curso de matemática da UFES, mas acabou 
+                                                        abandonando-o logo em seguida por não conseguir conciliá-lo com sua paixão pela
+                                                        música e pelo rap.
+                                                        Sua carreira como rapper começou a despertar interesse no final de 2014, 
+                                                        quando ele assistiu a uma batalha de MCs na praça do SESC, em Vitória.
+                                                        A partir desse momento, ele passou a participar do Rap de Quinta e, 
+                                                        posteriormente, do projeto Boca a Boca, que incentivava o freestyle,
+                                                        a poesia e tudo relacionado ao Hip Hop.
+<br>
+                                                        Ele venceu sua primeira batalha,
+                                                        mas admitiu ter perdido a segunda, dizendo: "No primeiro confronto, eu venci, 
+                                                        mas no segundo eu perdi. Inicialmente, senti que nasci para isso, mas na segunda
+                                                        derrota, percebi que talvez não fosse bem assim. Mesmo assim, continuei persistindo".
+                                                        Resende foi gradualmente se destacando nas batalhas e participou da Seletiva Nacional
+                                                        de 2016, onde derrotou MC Arthur na final. No Nacional de 2016, ele chegou às quartas
+                                                        de final, mas foi eliminado por Sid (DF), que acabou se consagrando como o campeão daquela
+                                                        edição. 
+<br>
+                                                        Desde então, Resende tem se dedicado à música, principalmente em parceria com a 
+                                                        Pineapple, lançando faixas como "Canção Infantil", "Minha Última Letra" e 
+                                                        "Quem Tem Boca Vaia Roma". Além disso, ele tem feito participações especiais 
+                                                        em músicas como "Favela Vive" e "Poetas no Topo".
+													
+</h3>
+</div>
+</pre>
+</p>
+
+<center>
+<video controls poster="mcc.jpg" width="640" height="450">
+  <source src="mcc.mp4" type="video/mp4">
+  <source src="mcc.webm" type="video/webm">
+  <source src="mcc.ogv" type="video/ogg">
+  <object>
+    <embed src="mcc.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+</center>
+<br>
+
+<div class="acessibilidade">
+<div class="texto">
+<center>
+
+<br>
+<h2>Favela Vive</h2>
+<div class="fv"> <center> <img src="fvv.png" style="position:relative; top:1%; left:20px;"width="600" height="500"/> </center> </div>
+</div>
+</div>
+
+<div class="container">
+<pre class="code">
+<p class="acessibilidade">
+<h3>
+                              o projeto audiovisual Favela Vive foi se transformando progressivamente em
+                              um dos grandes produtos do rap nacional.
+                              Capitaneados pela dupla ADL, foram incorporando outro mercados a partir do
+                              3º episódio com a inserção de MC’s do funk e de mulheres fundamentais para
+                              a cultura Hip-Hop, como Negra Li e Kamila CDD.
+
+                              O lançamento do potente Favela Vive 5, novamente gerou uma explosão no 
+                              cenário. Os envolvidos estiveram em alta no twitter, com números exponenciais 
+                              e crescentes. Enquanto escrevo, o projeto atual já passou de 1,5 milhões de 
+                              visualizações no youtube e contando. Como é de se esperar, diversas páginas 
+                              estão produzindo recortes e comentários, com reacts até do Jones Manoel, ou 
+                              seja, trata-se de um estrondoso sucesso.
+</h3>
+</div>
+</pre>
+</p>
+</center>
+</div>
+
+<center>
+<video controls poster="fvv.png" width="640" height="450">
+  <source src="fvl.mp4" type="video/mp4">
+  <source src="fvl.webm" type="video/webm">
+  <source src="fvl.ogv" type="video/ogg">
+  <object>
+    <embed src="fvl.mp4" type="application/x-shockwave-flash" 
+    allowfullscreen="false" allowscriptaccess="always">  		
+  </object>
+  Formato não suportado  
+</video>
+</center>
+
+
+</body>
+		</html>

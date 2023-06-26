@@ -1,0 +1,187 @@
+
+*{margin: 0; padding: 0;}
+.menu{
+list-style:none;
+border:1% solid #FFFFFF;
+float:left;
+background-color: #FFFFFF;
+}
+
+.menu ul {
+    width:100%; 
+    float:left; 
+    text-align:center;
+}
+.menu li{
+position:relative;
+float:left;
+border-right:0px solid #FFFFFF;
+    padding-right:1%;
+    display: inline-block;
+    list-style:none;
+
+}
+.menu li a{color:#333; text-decoration:none; padding:10px 35px; display:block;}
+
+.menu li a:hover{
+background:#000000;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+-webkit-box-shadow:0 3px 10px 0 #ccc;
+text-shadow:0px 0px 5px #fff;
+}
+.menu li  ul{
+position:absolute;
+top:40px;
+left:0;
+background-color:#FFFFFF;
+display:none;
+}
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+border:1px solid #c0c0c0;
+border-left: none;
+display:block;
+width:150px;
+margin: auto;
+} 
+
+.menu li .submenu {
+    border-left: none;
+}
+
+
+.menu{
+width: 100%;
+margin: auto;
+}
+
+.alto-contraste .menu {
+  background-color: white;
+  color: black;
+}
+
+
+p { font-family: arial; 
+color: #FFFFFF;}
+
+h1{
+    color: #FFFFFF;
+}
+
+
+body {
+    font-size: 18px;
+}
+
+.button{
+    width: 40px;
+}
+
+.djo{
+    color: #FFFFFF;
+position: absolute;
+top: 810px;
+left: 640px;
+}
+
+.dj img{
+ padding: 0px;
+ margin: 0px 0px 0px 0;
+ position: absolute;
+ top: 2550px;
+ left: 550px;
+ width: 25%;
+}
+
+.sf {
+    color: #FFFFFF;
+position: absolute;
+top: 2500px;
+left: 650px;	
+}
+
+.at{
+position: absolute;
+top:2000px;
+left: 400px;
+}
+ .vd source{
+ width: 100%;
+ }
+ 
+ .mb{
+color: #FFFFFF;
+position: absolute;
+top: 4250px;
+left: 600px;
+ }
+ 
+  .mbr img{
+position: absolute;
+top: 4300px;
+left: 540px;
+ }
+	 
+ .ta{
+color: #FFFFFF;
+position: absolute;
+top: 3800px;
+left: 480px;
+ }
+
+.taa{
+color: #FFFFFF;
+position: absolute;
+top: 3830px;
+left: 430px;
+}
+
+.mbb {
+color: #FFFFFF;
+position: absolute;
+top: 7000px;
+left: 430px;
+}
+
+.sdd{
+color: #FFFFFF;
+position: absolute;
+top: 1430px;
+left: 750px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.alto-contraste {
+  background-color: black;
+  color: black;
+}
+
+.button-contraste {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+}
+body.alto-contraste .menu,
+body.alto-contraste .menu li,
+body.alto-contraste .menu li a {
+  background-color: white;
+  color: black;
+}
+body.alto-contraste {
+  background-color: white;
+  color: black;
+}
+
+.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+
+

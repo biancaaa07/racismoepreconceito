@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Trabalho ad</title>
+
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+	
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="alterarFonte.js"></script>
+    <link rel="stylesheet" href="traba_ad_css.css">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+
+    <div class="tudo">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <h3>
+                        <a href="index.html">Racismo</a>
+                        <ul>
+                            <li><a href="racismo.html">O que é</a></li>
+                            <li><a href="mn.html">Movimento negro</a></li>
+                            <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                        </ul>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="index.html">Classismo</a>
+                        <ul>
+                            <li><a href="ps.html">O que é</a></li>
+                            <li><a href="lutasocial.html">Movimento social</a></li>
+                            <li><a href="refso.html">Referências artísticas</a></li>
+                        </ul>
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="acessibilidade">
+        <div class="texto">
+            <center>
+                <h1>Preconceito e discriminação</h1>
+            </div>
+        </center>
+    </div>
+
+    <br>
+    <h3>
+        <div class="container">
+            <pre class="code">
+                <p class="acessibilidade">
+                                                                             Preconceito e discriminação são temas que infelizmente ainda são muito
+                                                                             presentes em nossa sociedade. Mesmo com avanços em alguns aspectos, 
+                                                                             ainda há muito a ser feito para que todas as pessoas sejam tratadas de
+                                                                             forma igualitária e respeitosa. Por isso, trouxemos em nosso site a
+                                                                             abordagem de dois tipos de preconceito: o racismo e o preconceito social.
+                    <br>
+                                                                             O preconceito e a discriminação são problemas graves em nossa sociedade, 
+                                                                             mas todos nós podemos fazer a nossa parte para combatê-los. É fundamental 
+                                                                             que as pessoas sejam educadas sobre a importância da igualdade e do respeito 
+                                                                             às diferenças, e que denunciem casos de preconceito e discriminação.
+                    <br>
+                                                                             O diálogo, a empatia e o respeito são fundamentais para construir uma sociedade 
+                                                                             mais justa e igualitária.
+                </p>
+            </pre>
+        </div>
+    </h3>
+</body>
+</html>
+
+
+
+		

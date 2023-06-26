@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widht=device-width,
+    initial-scale=1.0"> 
+    <title> Luta social </title>
+	
+	<!-- VLibras  -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"> </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"> </div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"> </script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+	<!--biblioteca JQuery-->
+<script src="jquery-3.2.1.min.js"></script>
+
+<!--script com a função de aumentar a fonte-->
+<script src="alterarFonte.js"></script>
+<link rel="stylesheet" href="traba_ad_css.css">
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .alto-contraste {
+            background-color: white;
+            color: black;
+        }
+
+        .alto-contraste p, .alto-contraste h1, .alto-contraste h2, .alto-contraste h3, .alto-contraste h4, .alto-contraste h5, .alto-contraste h6 {
+            color: black;
+        }
+
+        /* Estilo específico para o menu */
+        .tudo .menu.alto-contraste {
+            background-color: white;
+            color: black;
+        }
+    </style>
+	<style>
+	.menu.alto-contraste {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+
+<body bgcolor="black">
+    <div style="position:fixed!important; top:10px; width:160px; height:50px; left:80%;">
+        <button class="botao" onclick="alterarFonte('a');" title="Aumentar fonte">A+</button>
+        <button class="botao" onclick="alterarFonte('d');" title="Diminuir fonte">A-</button>
+        <button class="botao" onclick="alterarFonte('n');" title="Fonte normal">A</button>
+        <button id="contraste-btn">Alternar Contraste</button>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btnContraste = document.getElementById('contraste-btn');
+    btnContraste.addEventListener('click', function() {
+        var body = document.body;
+        var menu = document.querySelector('.menu');
+
+        // Verifica se está no modo de alto contraste
+        var modoAltoContraste = body.classList.contains('alto-contraste');
+
+        if (modoAltoContraste) {
+            body.classList.remove('alto-contraste');
+            menu.classList.remove('alto-contraste'); // Remove a classe "alto-contraste" do menu
+            localStorage.setItem('contraste', 'normal');
+        } else {
+            body.classList.add('alto-contraste');
+            menu.classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+            localStorage.setItem('contraste', 'alto');
+        }
+    });
+
+    var contrasteSalvo = localStorage.getItem('contraste');
+    if (contrasteSalvo === 'alto') {
+        document.body.classList.add('alto-contraste');
+        document.querySelector('.menu').classList.add('alto-contraste'); // Adiciona a classe "alto-contraste" ao menu
+    }
+});
+
+    </script>
+		
+			
+	<div class="tudo">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href=""></a>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Racismo</a>
+                    <ul>
+                        <li><a href="racismo.html">O que é</a></li>
+                        <li><a href="mn.html">Movimento negro</a></li>
+                        <li><a href="referênciasracismo.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+            <li>
+                <h3>
+                    <a href="index.html">Classismo</a>
+                    <ul>
+                        <li><a href="ps.html">O que é</a></li>
+                        <li><a href="lutasocial.html">Movimento social</a></li>
+                        <li><a href="refso.html">Referências artísticas</a></li>
+                    </ul>
+                </h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="acessibilidade">
+<div class="texto">
+<center>
+
+<h1>Luta social</h1>
+<br>
+</div>
+</center>
+</div>
+<br>
+<h3>
+
+<div class="container">
+<pre class="code">
+<p class="acessibilidade"> 
+                                                                                A luta contra o classismo envolve a conscientização e mobilização
+                                                                                das pessoas pertencentes a classes oprimidas com o objetivo de
+                                                                                desafiar e transformar as estruturas e instituições que perpetuam as desigualdades. 
+                                                                                Os movimentos de classe trabalhadora, sindicatos, organizações de base e grupos
+                                                                                ativistas desempenham um papel importante nessa luta, buscando garantir direitos 
+                                                                                e melhores condições de vida para as classes menos privilegiadas.
+<br>
+                                                                                Essa luta pode se manifestar de várias formas, incluindo protestos, greves, 
+                                                                                negociações coletivas, campanhas de conscientizaçãoe pressão política.
+                                                                                Os objetivos podem incluir a redistribuição de riqueza, a melhoria das 
+                                                                                condições de trabalho, a garantia de salários justos, a proteção social, 
+                                                                                a igualdade de oportunidades e a eliminação das disparidades socioeconômicas.
+<br>
+                                                                                É importante ressaltar que a luta do classismo não se restringe apenas à 
+                                                                                divisão entre classes sociais, mas também se intersecta
+                                                                                com outras formas de opressão, como o racismo, o sexismo, 
+                                                                                a homofobia e a xenofobia. Muitas vezes, as pessoas pertencentes
+                                                                                a classes marginalizadas enfrentam múltiplas formas de discriminação, 
+                                                                                e a luta do classismo busca abordar essas interseções
+                                                                                e promover uma sociedade mais justa e igualitária para todas as pessoas.
+
+</pre>
+</p>
+</h3>
+</center>
+</p>
+</div>
+
+</div>
+
+</body>
+		</html>
